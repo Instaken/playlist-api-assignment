@@ -61,6 +61,10 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // ---------- ENDPOINTS ----------
 
+app.get('/', (req, res) => {
+    res.send('Playlist API is running!');
+});
+
 /**
  * @swagger
  * /songs:
